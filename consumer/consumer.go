@@ -1,4 +1,4 @@
-package main
+package consumer
 
 import (
 	"fmt"
@@ -10,7 +10,8 @@ import (
 	"github.com/confluentinc/confluent-kafka-go/kafka"
 )
 
-func main() {
+// Consumer : calls consumer basic usage
+func Consumer() {
 
 	if len(os.Args) != 2 {
 		fmt.Fprintf(os.Stderr, "Usage: %s <config-file-path>\n",

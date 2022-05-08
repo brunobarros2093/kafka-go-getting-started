@@ -1,4 +1,4 @@
-package main
+package producer
 
 import (
 	"fmt"
@@ -8,7 +8,8 @@ import (
 	"github.com/confluentinc/confluent-kafka-go/kafka"
 )
 
-func main() {
+//Producer : calls basic producer only
+func Producer() {
 	// le os argumentos passados
 	if len(os.Args) != 2 {
 		fmt.Fprintf(os.Stderr, "Usage: %s <config-file-path>\n",
